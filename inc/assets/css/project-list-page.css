@@ -1,0 +1,48 @@
+.display-posts-listing {
+  list-style-type: none;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.display-posts-listing > li {
+  width: 30%;
+  background-color: #fff;
+  box-shadow: 2px 2px 9px #888888;
+  margin: 10px 10px;
+}
+
+.display-posts-listing > li > a > img {
+  width: 100%;
+  height: auto;
+}
+
+.display-posts-listing > li > .title {
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 20px;
+  color: #000000;
+}
+
+.display-posts-listing > li > .content > p {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #000000;
+}
+
+.category-projekti-sivu > .projectpage-content > .entry-header {
+  padding: 0 15.5%;
+}
+
+.category-projekti-sivu > .projectpage-content > .navigation-buttons > a {
+  margin-left: 7%;
+}

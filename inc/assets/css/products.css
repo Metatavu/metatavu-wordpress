@@ -1,0 +1,110 @@
+.metatavu-section-products {
+  width: 100%;
+  min-height: 80vh;
+  background-image: url("../gfx/tuotteet-bg.gif");
+  background-size: cover;
+}
+
+.metatavu-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.metatavu-products > .type-page {
+  width: 440px;
+  height: 230px;
+  background-color: #fff;
+  box-shadow: 2px 2px 9px #888888;
+  display: flex;
+  margin: 2% 2%;
+}
+
+.product-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.product-content > .entry-content {
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.product-content > .entry-header {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.product-content > .entry-header > h1 {
+  color: #EA5B0C;
+}
+
+.product-content > .entry-content > p {
+  font-size: 12px;
+  float: left;
+}
+
+.product-content {
+  padding: 15px 15px 0 15px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.type-page > .product-content > div > .btn {
+  margin: 23px 15px 15px 15px;
+  padding: 4px 20px;
+  background: none;
+  color: #000000;
+  border: 1px solid #EA5B0C;
+}
+
+.product-thumbnail {
+  width: 60%;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1200px) {
+  .metatavu-products {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1006px) {
+  .metatavu-products > .type-page {
+    width: 46%;
+    width: 440px;
+    height: 250px;
+  }
+  
+  .metatavu-products {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 956px) {
+  .metatavu-products > .type-page {
+    width: 340px;
+    height: 250px;
+  }
+  
+  .product-thumbnail {
+    width: 80%;
+  }
+  
+  .product-content {
+    padding: 5px 15px 0 5px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .metatavu-products > .type-page {
+    width: 400px;
+    height: 250px;
+  }
+  
+}

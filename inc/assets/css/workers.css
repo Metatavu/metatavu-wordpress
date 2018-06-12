@@ -1,0 +1,52 @@
+.metatavu-section-workers {
+  width: 100%;
+  background-color: #fff;
+}
+
+.metatavu-workers {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.workers-description {
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+
+.metatavu-workers > .type-post {
+  width: 200px;
+  margin: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.metatavu-workers > .type-post > .entry-content {
+  text-align: center;
+}
+
+.metatavu-workers > .type-post > .entry-content > p {
+  margin: 0;
+  padding: 0;
+}
+
+.metatavu-workers > .type-post > .entry-header {
+  text-align: center;
+}
+
+.metatavu-workers > .type-post > .post-thumbnail {
+  display: flex;
+  justify-content: center;
+}
+
+.metatavu-workers > .type-post > .post-thumbnail > img {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+}

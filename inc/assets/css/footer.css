@@ -1,0 +1,117 @@
+.metatavu-section-footer-orange {
+  background-color: #EA5B0C;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.social-icon {
+  margin: 0 15px;
+}
+
+.social-icon:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.metatavu-section-footer-blue {
+  background-color: #14183B;
+  width: 100%;
+}
+
+.metatavu-section-footer-blue > .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.metatavu-section-footer-blue > .icons > .icon-wrapper {
+  width: 210px;
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-wrapper > .icon-text {
+  padding-top: 5px;
+  padding-left: 15px;
+  min-width: 100px;
+}
+
+.icon-wrapper > .icon-text > p {
+  color: #fff;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.metatavu-section-footer-blue > .icons > .icon-wrapper > .metatavu-address {
+  width: 48px;
+  height: 46px;
+  background-image: url("../gfx/osoite-icon.png");
+  background-size: cover;
+}
+
+.metatavu-section-footer-blue > .icons > .icon-wrapper > .metatavu-contact-info {
+  width: 48px;
+  height: 46px;
+  background-image: url("../gfx/contact-icon.png");
+  background-size: cover;
+}
+
+.metatavu-section-footer-blue > .icons > .icon-wrapper > .metatavu-white {
+  width: 113px;
+  height: 46px;
+  background-image: url("../gfx/metatavu-logo-white.png");
+  background-size: cover;
+  margin-right: 50px;
+}
+
+.copyright-container {
+  padding-top: 50px;
+}
+
+.copyright-container > p {
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+}
+
+.metatavu-section-footer-black {
+  background-color: #000000;
+  padding: 0;
+}
+
+.metatavu-section-footer-black > .haaja {
+  width: 104px;
+  height: 22px;
+  margin: 0 auto;
+  background-image: url("../gfx/design-by-haaja.png");
+  background-size: cover;
+}
+
+@media only screen and (max-width: 419px) {
+  .icon-wrapper {
+    margin: 20px 0;
+  }
+
+  .metatavu-icon {
+    margin-left: 10px
+  }
+
+  .metatavu-white {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 629px) {
+  .icon-wrapper{
+    min-width: 100%;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .metatavu-address {
+    margin-left: -21px;
+  }
+}

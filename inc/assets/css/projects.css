@@ -1,0 +1,87 @@
+.metatavu-section-projects {
+  background-color: #F0F0F0;
+}
+
+.metatavu-projects {
+  max-width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #F0F0F0;
+  margin: 0 auto;
+}
+
+.projects-container {
+  padding: 20px;
+}
+
+.project-title {
+  margin: 0 0 10px 0 !important;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.project-entry-content {
+  height: 75px;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.project-entry-content > p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #000000;
+}
+
+.metatavu-projects > .type-post {
+  width: 30%;
+  background-color: #fff;
+  box-shadow: 2px 2px 9px #888888;
+  margin: 10px 10px;
+}
+
+.project-post-thumbnail > img {
+  width: 100%;
+  height: auto;
+}
+
+.more-projects {
+  border: 2px solid #EA5B0C;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.more-projects:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 856px) {
+  .metatavu-projects {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .metatavu-projects {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .metatavu-projects > .type-post {
+    width: 42%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .metatavu-projects > .type-post {
+    width: 95%;
+  }
+}

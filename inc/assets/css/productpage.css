@@ -1,0 +1,66 @@
+.metatavu-productpage {
+  width: 100%;
+  padding-top: 76px;
+}
+
+.productpage-content {
+  padding: 100px 5% 0 5%;
+}
+
+.productpage-content > .entry-header {
+  padding: 3% 0;
+}
+
+.productpage-content > .entry-header > h1 {
+  font-size: 36px;
+  color: #000000;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.productpage-content > .entry-content {
+  padding: 0 0 5% 0;
+}
+
+.productpage-content > .entry-content > p {
+  margin-left: 0;
+}
+
+.productpage-content > .entry-content > img {
+  display: block;
+  width: 30%;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+  margin-top: 0;
+}
+
+.productpage-navigation {
+  padding: 10px 0 0 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.home-link, .home-link:active, .home-link:hover, .home-link:visited {
+  color: #EA5B0C;
+}
+
+@media only screen and (max-width: 991px) {
+  .productpage-content > .entry-content > img {
+    width: 40%;
+  }
+  
+  .productpage-content > .entry-content {
+    padding: 1% 0 5% 0;
+  }
+  
+  .productpage-content > .entry-header {
+    padding: 3% 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .productpage-content > .entry-content > img {
+    width: 50%;
+  }
+}

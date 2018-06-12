@@ -1,0 +1,34 @@
+.metatavu-section-frontpage {
+  width: 100%;
+  height: 93vh;
+  background-image: url("../gfx/hero-front.jpg");
+  background-size: cover;
+}
+
+.metatavu-section-frontpage > h1 {
+  font-size: 34px;
+}
+
+.metatavu-frontpage {
+  padding-top: 20%;
+  width: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+} 
+
+@media only screen and (max-width: 1020px) {
+  .metatavu-frontpage {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .metatavu-frontpage {
+    width: 90%;
+  }
+}

@@ -1,0 +1,51 @@
+.metatavu-section-services {
+  width: 100%;
+  background-color: #fff;
+}
+
+.metatavu-services {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.metatavu-services > .type-post {
+  width: 200px;
+  margin: 10px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.metatavu-services > .type-post > .entry-content {
+  text-align: center;
+}
+
+.metatavu-services > .type-post > .entry-content > p {
+  margin: 0;
+  padding: 0;
+}
+
+.metatavu-services > .type-post > .entry-header {
+  text-align: center;
+}
+
+.metatavu-services > .type-post > .entry-header > h1 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.metatavu-services > .type-post > .post-thumbnail {
+  display: flex;
+  justify-content: center;
+}
+
+.metatavu-services > .type-post > .post-thumbnail > img {
+  width: 70%;
+  height: 60%;
+  border-radius: 50%;
+}
