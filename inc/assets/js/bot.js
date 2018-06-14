@@ -92,14 +92,16 @@
   }
 
   function updateBotStatus(sessionId, open, messages) {
-    const botStatus = {
-      'sessionId': sessionId,
-      'open': open,
-      'messages': messages,
-      'lastUpdate': Date.now()
-    };
-    localStorage.removeItem('botStatus');
-    localStorage.setItem('botStatus', JSON.stringify(botStatus))
+    if (sessionId.length > 0) {
+      const botStatus = {
+        'sessionId': sessionId,
+        'open': open,
+        'messages': messages,
+        'lastUpdate': Date.now()
+      };
+      localStorage.removeItem('botStatus');
+      localStorage.setItem('botStatus', JSON.stringify(botStatus));
+    }
   }
 
   function getBotStatus() {

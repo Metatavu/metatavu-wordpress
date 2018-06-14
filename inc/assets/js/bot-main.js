@@ -36,7 +36,7 @@
         timeZone: this.timeZone,
         story: this.story,
         visitor: this.visitor,
-        sessionId: this.sessionId,
+        sessionId: this.sessionId ? this.sessionId : '',
         content: message
       };
 

@@ -21,7 +21,7 @@
     $translation_array = array( 'styleSheetUri' => get_stylesheet_directory_uri() );
     wp_localize_script( 'bot-init', 'metamindwp', $translation_array );
     wp_enqueue_script('theme-script', get_stylesheet_directory_uri() . '/inc/assets/build/theme-script.js', ['bot-init']);
-    wp_enqueue_script('bot-main', get_stylesheet_directory_uri() . '/inc/assets/build/metamind-client-bundle.js', ['bot-init']);
+    wp_enqueue_script('bot-main', get_stylesheet_directory_uri() . '/inc/assets/build/bot-main.js', ['bot-init']);
     wp_enqueue_script('bot', get_stylesheet_directory_uri() . '/inc/assets/build/bot.js', ['bot-init']);
   } , 99);
 
