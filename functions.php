@@ -8,6 +8,7 @@
   }
   
   add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_style('font_awesome', '//cdn.metatavu.io/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
     wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css?family=Montserrat' );
     wp_deregister_script( 'jquery-core' );
     wp_register_script( 'jquery-core', "https://code.jquery.com/jquery-3.1.1.min.js", array(), '3.1.1' );

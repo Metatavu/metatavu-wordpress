@@ -110,7 +110,7 @@ get_header(); ?>
 </div><!-- #primary -->
 
 <?php
-  $args = array( 'posts_per_page' => 1, 'category' => 'metamind-chat' );
+  $args = array( 'posts_per_page' => 1, 'name' => 'metamind-chat' );
   $metamind = get_posts( $args );
 
 foreach ( $metamind as $post ) : setup_postdata( $post ); ?>
