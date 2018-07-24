@@ -1,6 +1,7 @@
 .metatavu-section-frontpage {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
+  min-height: 50vh;
   background-image: url("../gfx/hero-front.jpg");
   background-size: cover;
 }
