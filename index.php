@@ -40,7 +40,16 @@ get_header(); ?>
               get_template_part( 'template-parts/projects', get_post_format() );
             endwhile;
             
-            echo '<a href="http://localhost:1338/?p=49&preview=true" class="more-projects">Lisää projekteja</a>';
+            $args = array(
+              'category_name'=> 'projectlist',
+              'posts_per_page'=> 1,
+            );
+
+            $query = new WP_Query( $args );
+            while ( $query->have_posts() ) : $query->the_post();
+              $link = get_permalink(get_the_ID());
+              echo '<a href="'. $link .'" class="more-projects">Lisää projekteja</a>';
+            endwhile;
         else :
           get_template_part( 'template-parts/content', 'none' );
         endif; ?>
@@ -67,8 +76,24 @@ get_header(); ?>
           while(have_posts()) : the_post();
             get_template_part( 'template-parts/products', get_post_format() );
           endwhile;
+
+          $args = array(
+            'category_name'=> 'productlist',
+            'posts_per_page'=> 1,
+          );
+          
+          $query = new WP_Query( $args );
+          while ( $query->have_posts() ) : $query->the_post();
+            $link = get_permalink(get_the_ID());
+            echo '<div style="display: flex; justify-content: center; width: 100%;">';
+            echo '<a href="'. $link .'" class="more-projects" style="clear: both;">Lisää tuotteita</a>';
+            echo '</div>';
+          endwhile;
         ?>
       </div>
+      <?php
+          
+        ?>
     </div>
   
     <div id="workers" class="metatavu-section metatavu-section-workers">
@@ -83,11 +108,18 @@ get_header(); ?>
         ?>
       </div>
     </div>
-  
-    <?php
-      get_footer();
-    ?>
-  
+
+    <footer id="colophon" class="site-footer <?php echo wp_bootstrap_starter_bg_class(); ?>" role="contentinfo">
+      <div class="metatavu-section metatavu-section-footer-orange">
+        <a href="https://www.facebook.com/metatavu/" target="_blank" class="social-icon"><i class="fa fa-linkedin-square" style="font-size:36px;color:#fff;"></i></a>
+        <a href="https://www.linkedin.com/company/metatavu/" target="_blank" class="social-icon"><i class="fa fa-facebook-f" style="font-size:32px;color:#fff;"></i></a>
+        <a href="https://twitter.com/MetatavuOy" target="_blank" class="social-icon"><i class="fa fa-twitter-square" style="font-size:32px;color:#fff;"></i></a>
+        <a href="https://www.youtube.com/channel/UC7lY7oRjqVsAEIxsSph_ySA" target="_blank" class="social-icon"><i class="fa fa-youtube" style="font-size:32px;color:#fff;"></i></a>
+        <a href="https://www.instagram.com/metatavu/?hl=en" target="_blank" class="social-icon"><i class="fa fa-instagram" style="font-size:32px;color:#fff;"></i></a>
+        <a href="https://github.com/Metatavu" target="_blank" class="social-icon"><i class="fa fa-github" style="font-size:32px;color:#fff;"></i></a>
+      </div>
+    </footer>
+
     <div id="frontpage_english" class="metatavu-section metatavu-section-english">
       <div class="metatavu-english">
         <h1>Metatavu in english</h1>
@@ -103,6 +135,10 @@ get_header(); ?>
         <p>+358 44 290 9201</p>
       </div>
     </div>
+  
+    <?php
+      get_footer();
+    ?>
   
     <div class="metatavu-section metatavu-section-footer-black">
       <div class="haaja"></div>

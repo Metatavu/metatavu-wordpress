@@ -42,9 +42,10 @@
   margin: 10px 10px;
 }
 
-.project-post-thumbnail > img {
-  width: 100%;
-  height: auto;
+.project-post-thumbnail {
+  height: 300px;
+  background-position: center;
+  background-size:cover;
 }
 
 .more-projects {

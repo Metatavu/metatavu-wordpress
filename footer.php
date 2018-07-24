@@ -13,10 +13,6 @@
 <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
   </div><!-- #content -->
     <footer id="colophon" class="site-footer <?php echo wp_bootstrap_starter_bg_class(); ?>" role="contentinfo">
-      <div class="metatavu-section metatavu-section-footer-orange">
-        <a href="https://www.facebook.com/metatavu/" target="_blank" class="social-icon"><i class="fa fa-linkedin-square" style="font-size:36px;color:#fff;"></i></a>
-        <a href="https://www.linkedin.com/company/metatavu/" target="_blank" class="social-icon"><i class="fa fa-facebook-f" style="font-size:32px;color:#fff;"></i></a>
-      </div>
 
       <div class="metatavu-section metatavu-section-footer-blue">
         <div class="icons">

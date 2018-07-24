@@ -1,8 +1,9 @@
 jQuery(function($) {
   'use strict';
 
-  $('.custom-page-scroller').on('click', function(e) {
-    var target = this.hash;
+  $('.custom-page-scroller > *').on('click', function(e) {
+    var elem = $(this).find('a:first');
+    var target = elem.length > 0 ? elem.hash : this.hash;
     if ($('.custom-page-scroller').hasClass('root')) {
       e.preventDefault()
     }

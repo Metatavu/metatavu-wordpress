@@ -4,7 +4,7 @@
 }
 
 .projectpage-content {
-  padding-top: 70px;
+  padding-top: 38px;
 }
 
 .projectpage-content > .jumbotron {
@@ -18,13 +18,15 @@
   padding: 0 10% 5% 10%;
 }
 
-.projectpage-content > .jumbotron > img {
-  width: 100%;
-  height: auto;
+.projectpage-content > .jumbotron {
+  height:500px;
+  background-position:center;
+  background-size:cover;
 }
 
 .projectpage-content > .entry-header {
-  width: 50%;
+  width: 65%;
+  max-width: 950px;
   margin: 0 auto 30px auto;
 }
 
@@ -34,20 +36,27 @@
   margin: 20px 0;
 }
 
-.projectpage-content > .entry-header > h1 {
+.projectpage-content > .entry-header > h1,
+.projectpage-content > .entry-header > h2 {
   font-size: 30px;
   color: #595959;
   margin-left: 0;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 
+.projectpage-content > .entry-header > h2 > a {
+  color: #595959;
+}
+
 .projectpage-content > .entry-content {
-  width: 50%;
+  width: 65%;
+  max-width: 950px;
   margin: 0 auto;
 }
 
 .projectpage-content > .entry-content > p {
-  margin-left: 0;
+  margin-left: 0.5%;
 }
 
 .projectpage-content > .entry-content > .wp-post-image {
@@ -76,7 +85,7 @@
   }
 
   .projectpage-content > .entry-content {
-    width: 60%;
+    width: 80%;
   }
 }
 
@@ -87,6 +96,12 @@
 
   .projectpage-content > .entry-content {
     width: 80%;
+  }
+}
+
+@media only screen and (max-width: 782px) {
+  .projectpage-content {
+    padding-top: 24px;
   }
 }
 

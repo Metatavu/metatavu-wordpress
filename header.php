@@ -32,33 +32,18 @@
           
           <a href="#" class="navigation-toggle"><i class="fa fa-bars fa-lg"></i></a>
 
-
-          <ul class="nav navbar-nav navbar-right closed" id="navigation">
-            <?php 
-              if (is_front_page()) {
-                $rootClass = 'root';
-                $baseUrl = '';
-              } else {
-                $rootClass = '';
-                $baseUrl = get_home_url() . '/';
-              }
-            ?>
-            <li>
-              <a href="<?php echo $baseUrl . '#frontpage' ?>" class="custom-page-scroller <?php echo $rootClass ?>">Etusivu</a>
-            </li>
-            <li>
-              <a href="<?php echo $baseUrl . '#clients' ?>" class="custom-page-scroller <?php echo $rootClass ?>">Asiakkaat</a>
-            </li>
-            <li>
-              <a href="<?php echo $baseUrl . '#services' ?>" class="custom-page-scroller <?php echo $rootClass ?>">Palvelut</a>
-            </li>
-            <li>
-              <a href="<?php echo $baseUrl . '#products' ?>" class="custom-page-scroller <?php echo $rootClass ?>">Ratkaisut</a>
-            </li>
-            <li><a href="#" class="custom-page-scroller <?php echo $rootClass ?>">Ajankohtaista</a></li>
-            <li><a href="<?php echo $baseUrl . '#workers' ?>" class="custom-page-scroller <?php echo $rootClass ?>">Ota yhteyttä</a></li>
-            <li><a href="<?php echo $baseUrl . '#frontpage_english' ?>" class="custom-page-scroller <?php echo $rootClass ?>">In english</a></li>
-          </ul>
+          <?php 
+          if (is_front_page()) {
+            $menu = "main";
+          } else {
+            $menu = "secondary";
+          }
+          wp_nav_menu(array(
+            'menu' => $menu,
+            'menu_class' => 'nav navbar-nav navbar-right closed',
+            'menu_id' => 'navigation'
+          )); 
+          ?>
       </nav>
     </div>
     

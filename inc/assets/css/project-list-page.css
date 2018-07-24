@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  padding: 0;
 }
 
 .display-posts-listing > li {
@@ -27,6 +28,12 @@
   padding-bottom: 0;
   font-size: 20px;
   color: #000000;
+}
+
+.display-posts-listing > li > .content {
+  height: 75px;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
 .display-posts-listing > li > .content > p {
