@@ -42,6 +42,16 @@
   margin: 10px 10px;
 }
 
+/* Landscape */
+@media screen and (orientation:landscape) and (max-width: 1024px) {
+  .metatavu-projects > .type-post {
+    width: 45%;
+    background-color: #fff;
+    box-shadow: 2px 2px 9px #888888;
+    margin: 10px 10px;
+  }
+}
+
 .project-post-thumbnail {
   height: 300px;
   background-position: center;
