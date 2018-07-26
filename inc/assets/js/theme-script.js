@@ -42,13 +42,14 @@ jQuery(function($) {
   }
 
   function loop() {
-    $('.chatbot-container').animate({
-      'bottom': '8'
+
+    $('.chatbot-wrap').animate({
+      'bottom': '3'
     }, {
       duration: 400,
       complete: () => {
-        $('.chatbot-container').animate({
-          bottom: 5
+        $('.chatbot-wrap').animate({
+          bottom: '8'
         }, {
           duration: 400,
           complete: loop
@@ -56,5 +57,34 @@ jQuery(function($) {
       }
     })
   }
-  loop()
+  loop();
+
+  $(document).on('click', '.more-products', function (event) {
+    event.preventDefault();
+    $('.type-page').slideDown({
+      start: function () {
+        $(this).css({
+          display: "flex"
+        })
+      },
+      done: function () {
+        $('.more-products').hide();
+      }
+    });
+  });
+
+  $(document).on('click', '.more-projects', function (event) {
+    event.preventDefault();
+    $('.category-projekti').slideDown({
+      start: function () {
+        $(this).css({
+          display: "block"
+        })
+      },
+      done: function () {
+        $('.more-projects').hide();
+      }
+    });
+  });
+  
 });

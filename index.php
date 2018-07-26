@@ -34,22 +34,20 @@ get_header(); ?>
             endif;
             
             global $query_string;
-            query_posts ('category_name=projekti&showposts=6');
+            query_posts ('category_name=projekti');
             
+            $index = 1;
             while ( have_posts() ) : the_post();
+              set_query_var( 'index', $index );
               get_template_part( 'template-parts/projects', get_post_format() );
+              $index++;
             endwhile;
+          ?>
+          <div style="display: flex; justify-content: center; width: 100%;cursor:pointer;">
+            <p class="more-projects" style="clear: both;">Lisää tuotteita</p>
+          </div>
+          <?php
             
-            $args = array(
-              'category_name'=> 'projectlist',
-              'posts_per_page'=> 1,
-            );
-
-            $query = new WP_Query( $args );
-            while ( $query->have_posts() ) : $query->the_post();
-              $link = get_permalink(get_the_ID());
-              echo '<a href="'. $link .'" class="more-projects">Lisää projekteja</a>';
-            endwhile;
         else :
           get_template_part( 'template-parts/content', 'none' );
         endif; ?>
@@ -72,28 +70,21 @@ get_header(); ?>
       <h3 class="metatavu-projects-header"> Tuotteet </h3>
       <div class="metatavu-products">
         <?php
-          query_posts ('post_type=page&showposts=4');
-          while(have_posts()) : the_post();
-            get_template_part( 'template-parts/products', get_post_format() );
-          endwhile;
+          query_posts ('post_type=page');
 
-          $args = array(
-            'category_name'=> 'productlist',
-            'posts_per_page'=> 1,
-          );
-          
-          $query = new WP_Query( $args );
-          while ( $query->have_posts() ) : $query->the_post();
-            $link = get_permalink(get_the_ID());
-            echo '<div style="display: flex; justify-content: center; width: 100%;">';
-            echo '<a href="'. $link .'" class="more-projects" style="clear: both;">Lisää tuotteita</a>';
-            echo '</div>';
+          $index = 1;
+          while(have_posts()) : the_post();
+            set_query_var( 'index', $index );
+            get_template_part( 'template-parts/products', get_post_format() );
+            $index++;
           endwhile;
         ?>
+
+        <div style="display: flex; justify-content: center; width: 100%;cursor:pointer;" >
+          <p class="more-products" style="clear: both;">Lisää tuotteita</p>
+        </div>
       </div>
-      <?php
-          
-        ?>
+      
     </div>
   
     <div id="workers" class="metatavu-section metatavu-section-workers">

@@ -26,14 +26,6 @@ get_header(); ?>
   </section><!-- #primary -->
 </div>
 
-<div class="chatbot-container">
-  <div class="bubble">
-    <span class="close-bubble"><i class="fa fa-close"></i></span>
-    Tule juttelemaan!
-  </div>
-  <div class="chatbot" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/inc/assets/gfx/robot.png);"></div>
-</div>
-
 <?php get_template_part( 'template-parts/chat'); ?>
 
 <?php

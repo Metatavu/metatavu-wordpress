@@ -12,38 +12,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <div class="projectpage-content">
-    
-    <?php if (get_the_category()[0]->name == "projectlist") { ?>
-      <div class="metatavu-projects" style="background: none;">
-        <?php
-            global $query_string;
-            query_posts ('category_name=projekti');
-            
-            while ( have_posts() ) : the_post();
-              get_template_part( 'template-parts/projects', get_post_format() );
-            endwhile;
-            wp_reset_query();
-        ?>
-      </div>
-    <?php } ?>
 
-
-    <?php if (get_the_category()[0]->name == "productlist") { ?>
-      <div class="metatavu-products" style="background: none;">
-        <?php
-          query_posts ('post_type=page');
-          while(have_posts()) : the_post();
-            get_template_part( 'template-parts/products', get_post_format() );
-          endwhile;
-          wp_reset_query();
-        ?>
-      </div>
-    <?php } ?>
-
-
-    <?php if (get_the_category()[0]->name != "projectlist" && get_the_category()[0]->name != "productlist") { ?>
+    <?php if (get_the_category()[0]->name != "palvelut") { ?>
       <div class="jumbotron" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>')">
       </div>
+    <?php } ?>
       
       <header class="entry-header">
         <?php
@@ -95,7 +68,6 @@
             }
           ?>
         </div>
-      <?php } ?>
     </div><!-- .entry-content -->
 
   </div>

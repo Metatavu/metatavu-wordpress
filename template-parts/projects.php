@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article data-index="<?php echo $index ?>" style="display:<?php echo $index > 6 ? 'none' : 'block' ?>" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <a href="<?php the_permalink(); ?>">  
     <div class="project-post-thumbnail" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>')">
     </div>

@@ -17,6 +17,7 @@
 
 .project-title {
   margin: 0 0 10px 0 !important;
+  flex-direction: row;
   font-size: 16px;
   font-weight: bold;
   color: #000000;
@@ -58,7 +59,7 @@
   background-size:cover;
 }
 
-.more-projects {
+.more-projects, .more-products {
   border: 2px solid #EA5B0C;
   color: #000000;
   text-transform: uppercase;

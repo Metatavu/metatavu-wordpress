@@ -24,6 +24,7 @@
 }
 
 .metatavu-services > .type-post > .entry-content > p {
+  color: #000000;
   margin: 0;
   padding: 0;
 }
@@ -32,19 +33,21 @@
   text-align: center;
 }
 
-.metatavu-services > .type-post > .entry-header > h1 {
+.metatavu-services > .type-post > .entry-header h1 {
+  color: #000000;
   margin-bottom: 5px;
+  margin-top: 8px;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
 }
 
-.metatavu-services > .type-post > .post-thumbnail {
+.metatavu-services .post-thumbnail {
   display: flex;
   justify-content: center;
 }
 
-.metatavu-services > .type-post > .post-thumbnail > img {
+.metatavu-services .post-thumbnail img {
   width: 70%;
   height: 60%;
   border-radius: 50%;

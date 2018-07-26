@@ -5,11 +5,13 @@
       const styleSheetUri = metamindwp.styleSheetUri;
       element.append(`
         <div class="chatbot-container">
-          <div class="bubble">
-            <span class="close-bubble"><i class="fa fa-close"></i></span>
-            Tule juttelemaan!
+          <div class="chatbot-wrap">
+            <div class="bubble">
+              <span class="close-bubble"><i class="fa fa-close"></i></span>
+              Tule juttelemaan!
+            </div>
+            <div class="chatbot" style="background-image: url(${styleSheetUri}/inc/assets/gfx/robot.png);"></div>
           </div>
-          <div class="chatbot" style="background-image: url(${styleSheetUri}/inc/assets/gfx/robot.png);"></div>
         </div>
       `);
       element.append(`

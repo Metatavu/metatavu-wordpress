@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article data-index="<?php echo $index ?>" style="display:<?php echo $index > 4 ? 'none' : 'flex' ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
   <div 
     class="product-thumbnail" 
     style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ) ?>)"> 
