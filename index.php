@@ -44,7 +44,7 @@ get_header(); ?>
             endwhile;
           ?>
           <div style="display: flex; justify-content: center; width: 100%;cursor:pointer;">
-            <p class="more-projects" style="clear: both;">Lisää tuotteita</p>
+            <p class="more-projects" style="clear: both;">Lisää projekteja</p>
           </div>
           <?php
             
@@ -58,7 +58,7 @@ get_header(); ?>
       <h3 class="metatavu-projects-header"> Palvelut </h3>
       <div class="metatavu-services">
         <?php
-          query_posts ('category_name=palvelut&post_type=post&showposts=4');
+          query_posts ('category_name=palvelut&post_type=post&showposts=8');
           while(have_posts()) : the_post();
             get_template_part( 'template-parts/service', get_post_format() );
           endwhile;
@@ -70,7 +70,7 @@ get_header(); ?>
       <h3 class="metatavu-projects-header"> Tuotteet </h3>
       <div class="metatavu-products">
         <?php
-          query_posts ('post_type=page');
+          query_posts ('post_type=page&orderby=menu_order&order=ASC');
 
           $index = 1;
           while(have_posts()) : the_post();
