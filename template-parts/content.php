@@ -35,6 +35,10 @@
           else :
             the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wp-bootstrap-starter' ) );
           endif;
+
+          if (get_the_category()[0]->name != "palvelut") {
+            addSocialShareButtons(get_permalink());
+          }
         ?>
 
         <div class="metatavu-workers">
