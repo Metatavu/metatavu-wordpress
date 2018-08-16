@@ -32,4 +32,9 @@
   }
   add_filter('get_image_tag_class', 'image_tag_class' );
 
+  function addSocialShareButtons ($url) {
+    echo '<p>Jaa: </p>';
+    echo '<a href="https://www.facebook.com/share.php?u='. $url .'"> <i class="fa fa-facebook-official" style="font-size:42px;"></i></a>';
+  }
+
 ?>

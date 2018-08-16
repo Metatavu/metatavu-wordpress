@@ -34,6 +34,8 @@
         else :
           the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wp-bootstrap-starter' ) );
         endif;
+
+        addSocialShareButtons(get_permalink());
       ?>
 
       <div class="metatavu-workers">
