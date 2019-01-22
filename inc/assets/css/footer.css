@@ -30,6 +30,7 @@
   width: 210px;
   display: flex;
   flex-direction: row;
+  margin-top: 15px;
 }
 
 .icon-wrapper > .icon-text {
@@ -59,8 +60,22 @@
   background-size: cover;
 }
 
+.metatavu-section-footer-blue > .icons > .icon-wrapper > .metatavu-partnership {
+  width: 157px;
+  height: 53px;
+  background-image: url("../gfx/luotettava-kumppani.png");
+  background-size: cover;
+}
+
+.metatavu-section-footer-blue > .icons > .icon-wrapper > .metatavu-partnership > a {
+  display: block;
+  width: 160px;
+  height: 65px;
+  opacity: 0;
+}
+
 .metatavu-section-footer-blue > .icons > .icon-wrapper > .metatavu-white {
-  width: 113px;
+  width: 120px;
   height: 46px;
   background-image: url("../gfx/metatavu-logo-white.png");
   background-size: cover;
@@ -88,6 +103,13 @@
   margin: 0 auto;
   background-image: url("../gfx/design-by-haaja.png");
   background-size: cover;
+}
+
+.metatavu-section-footer-black > .haaja > a {
+  display: block;
+  width: 108px;
+  height: 26px;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 419px) {
