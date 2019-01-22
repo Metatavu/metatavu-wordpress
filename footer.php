@@ -35,8 +35,16 @@
               <p>+358 44 290 9201</p>
             </div>
           </div>
+        
+        
+        <div class="icon-wrapper">
+            <div class="metatavu-partnership metatavu-icon">
+              <a target="_blank" href=" https://www.tilaajavastuu.fi/fi/pikatarkistus/?yt=2771822-3">Luotettava kumppani</a></div>
+          </div>
         </div>
         
+
+
         <div class="copyright-container">
           <p class="copyright">&copy; Metatavu Oy. All rights Reserved</p>
         </div>
@@ -47,4 +55,4 @@
 
 <?php wp_footer(); ?>
 </body>
-</html>
+</html>  

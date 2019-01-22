@@ -132,7 +132,8 @@ get_header(); ?>
     ?>
   
     <div class="metatavu-section metatavu-section-footer-black">
-      <div class="haaja"></div>
+      <div class="haaja">
+        <a target="_blank" href=" https://haaja.com/">Haaja </a></div></div>
     </div>
 </div><!-- #primary -->
 
